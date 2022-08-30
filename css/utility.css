@@ -1,0 +1,15 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* This hover effect is added for answer options */
+.answer-options span:hover {
+    background-color: rgb(51, 181, 233);
+    color: black;
+}
+
+/* For mobile device responsiveness added */
+

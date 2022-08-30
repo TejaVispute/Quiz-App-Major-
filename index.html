@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/utility.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <title>Quiz App</title>
+</head>
+
+<body>
+    <!-- main container Starts from here -->
+    <div class="main-container-fluid">
+        <!-- box added in page all content is stored in this perticular box -->
+        <div class="inside-box">
+
+            <div class="logo">
+                <!-- logo added here  -->
+                <img src="./logos/logo.png" alt>
+            </div>
+            <!-- upper section starts here -->
+            <div class="upper-section">
+                <h2 class="header-style">Hello User!</h2>
+                <h2>Enter your name to continue the quiz</h2>
+            </div>
+            <!-- upper section starts here -->
+
+            <!-- This is user name input section -->
+            <div class="user-input">
+                <div class="enter-name">
+                    <input type="text" class="input-val" placeholder="Enter your name" name="value">
+                </div>
+                <div class="submit-name">
+                    <button type="button" class="btn-submit btn btn-outline-info" onclick="printname()">Enter</button>
+                </div>
+            </div>
+            <div id="displayname"></div>
+            <!-- user name input section  ends here-->
+
+            <!-- instruction part of App -->
+            <div class="instructions">
+                <p>You Have 10 seconds to answer each question</p>
+            </div>
+            <!-- instruction part of App ends here -->
+            <div class="line"></div>
+
+            <div class="heading-bottom">
+                <h2 class="header-style">
+                    Select Category
+                </h2>
+            </div>
+            <!-- bottom section starts from here -->
+            <div class="bottom-section">
+
+                <div class="btn-bottom">
+                    <button class="btn1" type="button">SECTION</button>
+                    <button class="btn2" type="button">SECTION2</button>
+                    <button class="btn3" type="button">SECTION3</button>
+                    <button class="btn4" type="button">SECTION4</button>
+                </div>
+
+
+                <!-- bottom section Ends  here -->
+            </div>
+        </div>
+    </div>
+    <!-- main container Ends  here -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

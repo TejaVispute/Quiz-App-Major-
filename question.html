@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./css/style_question.css" rel="stylesheet" />
+  <link href="./css/utility.css" rel="stylesheet" />
+  <title>Question Section</title>
+</head>
+
+<body>
+  <!-- The main container started here -->
+  <div class="container-fluid">
+    <!-- inside main container this is main questions box -->
+    <div class="box">
+      <!-- Title on which topics questions will be displayed -->
+      <div class="title-bar">
+        Profit & Loss Questions
+      </div>
+      <!-- score and timer section added here -->
+      <div class="score-timer">
+        <div id="timer">00</div>
+        <div id="score">score: 1</div>
+
+      </div>
+
+      <fieldset>
+        <legend class="qucount">
+          1/10
+        </legend>
+        <div class="Question">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam id provident ducimus commodi assumenda
+          rem blanditiis itaque omnis. Numquam repellat maxime quo commodi veritatis nobis accusamus expedita, eius
+          unde error?
+        </div>
+      </fieldset>
+
+      <!-- Answer Options  starts here -->
+      <div class="answer-options">
+        <span type="button" id="option1">Ans1</span>
+        <span type="button" id="option2">Ans2</span>
+        <span type="button" id="option3">Ans3</span>
+        <span type="button" id="option4">Ans4</span>
+      </div>
+      <!-- Answer Options  ends here -->
+
+      <!-- Next button for next question -->
+      <div class="next-button">
+        <button type="button" id="next" class="btn btn-info" onclick="loadQuestion()"> Next Question</button>
+      </div>
+      <!-- next button for next question ends here -->
+    </div>
+  </div>
+  <!-- main container ends here -->
+  <script src="/js/questions_collection.js"></script>
+  <script src="/js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,303 @@
+/* This is main container  */
+.main-container-fluid {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to left, #96d6ec 0%, #63b0e3 100%);
+}
+
+/* inside container this is main box all content stored here */
+.inside-box {
+  width: 45vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  background-color: whitesmoke;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px whitesmoke;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* logo for quiz app */
+.logo img {
+  width: 70px;
+  object-fit: cover;
+  margin-top: 5px;
+}
+
+.upper-section h2 {
+  font-size: 19px;
+}
+
+/* input section targated here */
+.user-input {
+  display: flex;
+}
+
+/* input section styled here with padding, width etc.  */
+.user-input .enter-name input[type="text"] {
+  width: 30vw;
+  padding: 10px 5px;
+  margin-top: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+/* submit button for input section  */
+.submit-name button {
+  margin-top: 10px;
+  margin-left: 5px;
+  padding: 10px 20px;
+  border: 1px solid skyblue;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* instructions section */
+.instructions {
+  margin-top: 10px;
+}
+
+/* linebreak between bottom section and mid section */
+.line {
+  width: 40vw;
+  margin-top: 10px;
+  border: 0.1px solid lightgrey;
+}
+
+/* bottom select category buttons styled here  */
+.btn-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-evenly;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* catagory */
+.header-style {
+  font-size: 22px;
+  color: #2dade2;
+  margin-top: 7px;
+}
+
+/* 4 buttons created for question category */
+.btn-bottom button {
+  width: 20vw;
+  height: 7vh;
+  border: 1px solid #2dade2;
+  padding: 10px;
+  font-weight: bolder;
+  border-radius: 10px;
+  transition: 0.3s ease-in;
+}
+
+/* hover effect added to the buttons */
+.btn-bottom button:hover {
+  background-color: #2dade2;
+  color: whitesmoke;
+}
+
+/* next and previus buttons styled here */
+.bottom-section button {
+  margin-top: 10px;
+}
+
+
+/* extra small device */
+@media only screen and (max-width: 400px) {
+  .inside-box {
+    width: 90%;
+    height: auto;
+  }
+
+  .logo img {
+    width: 30px;
+    object-fit: cover;
+  }
+
+  .upper-section h2 {
+    font-size: 12px;
+  }
+
+  .user-input {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .user-input .enter-name input[type="text"] {
+    padding: 8px;
+    width: 60vw;
+  }
+
+  .submit-name button {
+    padding: 3px;
+    width: 20vw;
+  }
+
+  .heading-bottom h2 {
+    font-size: 14px;
+  }
+
+  .instructions {
+    font-size: 17px;
+  }
+
+  .line {
+    margin-top: 0px;
+    width: 80%;
+
+  }
+
+  .btn-bottom {
+    grid-template-columns: 1fr;
+    margin-bottom: 10px;
+  }
+
+  .btn-bottom span {
+    width: 80vw;
+    padding: 10px;
+   
+    font-size: 12px;
+  }
+
+  .logo img {
+    margin-top: 10px;
+  }
+
+}
+
+/* for mobile device added this media query*/
+@media only screen and (max-width: 600px) {
+  .inside-box {
+    width: 80%;
+    height: 85%;
+  }
+
+  .logo img {
+    width: 70px;
+    object-fit: cover;
+  }
+
+  .upper-section h2 {
+    font-size: 20px;
+  }
+
+  .user-input {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .user-input .enter-name input[type="text"] {
+    padding: 5px;
+    width: 50vw;
+  }
+
+  .submit-name button {
+    padding: 5px;
+    width: 20vw;
+  }
+
+  .heading-bottom h2 {
+    font-size: 16px;
+  }
+
+  .instructions {
+    font-size: 14px;
+  }
+
+  .line {
+    margin-top: 0px;
+    width: 80%;
+
+  }
+
+  .btn-bottom {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-bottom span {
+    width: 60vw;
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .logo img {
+    margin-top: 10px;
+  }
+
+}
+
+/* media queries for mobile devices ends here */
+
+
+/* media queries for ipad devices starts here */
+@media only screen and (max-width: 900px) {
+  .inside-box {
+    width: 80%;
+    height: auto;
+  }
+
+  .logo img {
+    width: 70px;
+    object-fit: cover;
+  }
+
+  .upper-section h2 {
+    font-size: 20px;
+  }
+
+  .user-input {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .user-input .enter-name input[type="text"] {
+    padding: 10px;
+    width: 60vw;
+  }
+
+  .submit-name button {
+    padding: 5px;
+    width: 20vw;
+  }
+
+  .heading-bottom h2 {
+    font-size: 16px;
+  }
+
+  .instructions {
+    font-size: 17px;
+  }
+
+  .line {
+    margin-top: 0px;
+    width: 80%;
+
+  }
+
+  .btn-bottom {
+    grid-template-columns: 1fr;
+    margin-bottom: 10px;
+  }
+
+  .btn-bottom span {
+    width: 60vw;
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .logo img {
+    margin-top: 10px;
+  }
+
+}
+
+/* media queries for ipad devices ends here */
+
+

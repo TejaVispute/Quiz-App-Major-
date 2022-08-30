@@ -1,0 +1,71 @@
+/* main container styled here */
+.container-fluid {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to left, #33ccff 0%, #0099ff 100%);
+}
+
+/* box inside container that contain all elements */
+.box {
+    width: 40vw;
+    height: auto;
+    background-color: whitesmoke;
+    -webkit-box-shadow: 7px 7px 16px 0px rgba(166, 164, 166, 1);
+    -moz-box-shadow: 7px 7px 16px 0px rgba(166, 164, 166, 1);
+    box-shadow: 7px 7px 16px 0px rgba(166, 164, 166, 1);
+    border-radius: 10px;
+
+}
+
+/* Rules secton */
+.heading {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid grey;
+}
+
+.rules {
+    padding: 30px;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.btns {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.color {
+    color: #0099ff;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .box {
+        width: 100vw;
+        height: auto;
+    }
+
+    .heading h2 {
+        font-size: 18px;
+    }
+
+    .rules {
+        text-align: justify;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .box {
+        width: 80vw;
+    }
+
+    .rules {
+        text-align: justify;
+    }
+}
